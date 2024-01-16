@@ -1,0 +1,291 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+
+
+/*<<<<<<<<<<------INICIA HEADER-------->>>>>>>>>>>*/
+header {
+    background-color: rgb(160, 168, 254);
+}
+
+/*TODO EL CONTENEDOR HEADER*/
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6em;
+}
+
+/*Mi nombre*/
+header .logo {
+    margin: 25px 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: rgb(71, 0, 137);
+    font-size: 1.25em;
+}
+
+/*LINKS*/
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+/*Alinear, separar Inicio, sobre mi y contacto*/
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/*SOMBRA DE: Inicio, Sobre mi y Contacto*/
+header a:hover {
+    color: rgb(65, 4, 121);
+}
+
+
+/*BOTONES*/
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: blanchedalmond;
+    background-color: rgb(47, 4, 87);
+    
+}
+
+/*SOMBRA DE LOS BOTONES AL PASAR CURSOR*/
+button:hover {
+    background-color: rgb(32, 5, 56);
+}
+
+
+/*<<<TODOS LOS DIVS>>>*/
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+/*<<<<<<<<<<<-----------PRIMERA SECCION--------->>>>>>>>>>>>>*/
+
+/*TITULO: MI PRIMERA PAGINA WEB*/
+h1 {
+    font-size: 5.5em;
+    font-family: 'DynaPuff';
+}
+
+#primera-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 125vh;
+    color:rgb(253, 253, 253);
+    /*Imagen de fondo y linear-gradient para poner un fondo oscuro*/
+    background-image: linear-gradient(
+        0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)),
+       url("imagenes/Imagen-de-futbol-3.jpg");  
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/*<<<<<<<<<<<<<----------SEGUNDA SECCION------------>>>>>>>>>>>>>*/
+
+/*Todo el contenedor*/
+#segunda-section .contenedor {
+    text-align: center;
+    padding: 125px 12px;
+    align-items: center;
+}
+
+/*<<<<Mi nombre es Carlos...>>>*/
+h2 {
+    font-size: 3em;
+}
+
+img {
+    border-radius: 55%;
+    width: 200px;
+    height: 200px;
+    display: inline-table;
+    border-style: solid;
+}
+
+/*SOLO EL PARRAFO: "Tengo 18 años..."*/
+#parrafo-uno {
+    color: blue;
+    font-family: 'Gill Sans';
+    font-size: 1.3em;
+}
+
+
+
+/*<<<<<<<<<<<<<<--------TERCERA SECCION--------->>>>>>>>>>>>>>>>*/
+
+/*Fondo oscuro, color de letras y centrar*/
+#cosas-que-me-gustan {
+    background-color: rgba(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#cosas-que-me-gustan .contenedor {
+    padding: 150px 12px;
+}
+
+/*El titulo h2 (COSAS QUE AMO) trae margin por defecto se lo quito de arriba*/
+#cosas-que-me-gustan h2 {
+    margin-top: 0; 
+}
+
+/*Solo los parrafos dentro de esta seccion*/
+#cosas-que-me-gustan p {
+    display: none;
+}
+
+
+/*<<<COMIENZO A EDITAR LAS CARTAS>>>*/
+
+/*TITULOS DE LAS CARTITAS*/
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+
+#cosas-que-me-gustan .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/*FONDO DE LA PRIMERA CARTA*/
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("imagenes/Carta\ de\ futbol.jpg");
+}
+
+/*FONDO DE LA SEGUNDA CARTA*/
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("imagenes/carta\ programar.jpg");
+}
+
+/*FONDO DE LA TERCER CARTA*/
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url("imagenes/carta\ café.jpg");
+}
+
+
+
+/*<<<<<<<<<<CUARTA SECCION (A continiación te cuento)...>>>>>>>>>>>>>*/
+
+#sobre-mi .contenedor {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 125px 15px;
+    color: white;
+    background-color: rgb(48, 15, 79);
+    
+}
+
+
+/*SOLO LOS PARRAFOS SOBRE MI*/
+#sobre-mi p {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: 'Qwitcher Grypen';
+}
+
+
+/*Solo el titulo*/
+#sobre-mi h3 {
+    font-size: 2em;
+}
+
+
+
+
+#final {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    padding-bottom: 25px;
+}
+
+#final button {
+    margin: 15px; 
+}
+
+
+
+
+
+
+
+@media (min-width: 400px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px ;
+    }
+
+    #segunda-section .contenedor {
+
+    }
+
+
+
+
+
+    
+
+
+}

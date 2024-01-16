@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>Mi segunda Página Web</title>
+
+    <!--FUENTE 1-->
+    <!--font-family: 'DynaPuff', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+    <!--FUENTE 2-->
+    <!-- 'Abril Fatface', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <!--FUENTE 3-->
+    <!--font-family: 'Abril Fatface', cursive;
+    font-family: 'Qwitcher Grypen', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Qwitcher+Grypen&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="logo">Carlos Alvarado</p>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#sobre-mi">Sobre mi</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+<!--PRIMERA SECCIÓN-->
+    <section id="primera-section">
+        <div class="contenedor">
+            <h1>Mi Primera Página Web</h1>
+            <button>Ver más</button>
+        </div>
+    </section>
+
+
+<!--SEGUNDA SECCIÓN-->
+    <section id="segunda-section">
+        <div class="contenedor">
+
+            <div class="contenedor-imagen"></div>
+            <h2>Mi nombre es Carlos Eduardo Alvarado Hernández</h2>
+
+            <img src="imagenes/Mi foto 1.jpg">
+
+            <p id="parrafo-uno">Tengo 18 años, vivo en El salvador soy desarrollador de Software (Progarmador) en futbolify. <br> Algunas de las técnologias que domino son:<br> JavaScript, TypeScript, React Js, Dart, Flutter y GraphQL entre herramientas cómo TailwindCss y Sass</p>
+        </div>
+    </section>
+    
+
+<!--TERCERA SECCIÓN-->
+    <section id="cosas-que-me-gustan">
+        <div class="contenedor">
+            <h2>Cosas que me gusta hacer</h2>
+
+            <div class="segundo-contenedor-de-cartas">
+
+
+                <div class="carta">
+                    <h3>Jugar futbol</h3>
+                    <p>Me encanta hacer deporte en especial jugar futbol </p>
+                   <button>OK</button>
+                </div>
+
+                <div class="carta">
+                   <h3>Programar</h3>
+                   <p>Aunque es algo nuevo para mi, es algo que realmente disfruto pasar horas descubriendo y aprendiendo sobre este nuevo mundo. </p>
+                   <button>OK</button>
+                </div>
+
+                <div class="carta">
+                   <h3>Tomar café</h3>
+                   <p>Y esto sin duda es lo que más me gusta hacer.<br> ¡NO HAY NADA COMPARABLE A ESTO!</p>
+                  <button>OK</button>
+               </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!--CUARTA SECCIÓN-->
+    <section id="sobre-mi">
+        <div class="contenedor">
+            <h3>A CONTINUACIÓN TE CUENTO UN POCO MÁS SOBRE MI.</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit dolore doloribus, laudantium animi amet nisi explicabo soluta alias. Asperiores consequuntur quibusdam in laudantium eveniet vero veniam aliquid nemo commodi vel?</p>
+        </div>
+    </section>
+
+
+<!--QUINTA SECCIÓN-->
+    <section id="final">
+        <div class="contenedor">
+           <!--- <h3>¿Y a ti te interesa la programación?</h3>
+            <button>SI</button>       <button>NO</button>
+        </div>-->
+        <!--PREGUNTA AL USUARIO-->
+        <h3>¿Y a ti te interesa la aprogramación?</h3>
+        
+        <!--FORMULARIO DE REGISTRO-->
+        <form action="/enviar-respuesta">
+        
+            <!--BOTÓN DE RADIO O BOTÓN DE OPCIÓN-->
+            <label for="SI">
+                <input id="si" type="radio" value="SI" name="SI-NO" checked>SI
+            </label>
+            <br>
+            <label for="NO">
+                <input id="NO" type="radio" value="NO" name="SI-NO">NO
+            </label><br>
+        
+            <!--FORMULARIO DE REGÍSTRO TIPO TEXTO-->
+            <input type="text" placeholder="Escribe un comentario" required>
+            <br>
+            <!--BOTÓN DE ENVIAR-->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <p>&copy; Carlos Alvarado</p>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
